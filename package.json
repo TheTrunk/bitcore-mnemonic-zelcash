@@ -1,0 +1,49 @@
+{
+  "name": "bitcore-mnemonic-zelcash",
+  "version": "1.5.0",
+  "description": "BIP39 Mnemonics implemented for Bitcore.",
+  "author": "BitPay <dev@bitpay.com>, TheTrunk",
+  "main": "index.js",
+  "scripts": {
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "coverage": "gulp coverage",
+    "build": "gulp"
+  },
+  "contributors": [
+    {
+      "name": "Yemel Jardi",
+      "email": "angel.jardi@gmail.com"
+    },
+    {
+      "name": "Matias Alejo Garcia",
+      "email": "ematiu@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheTrunk/bitcore-mnemonic-zelcash.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "zelcash",
+    "bitcore",
+    "mnemonic",
+    "crypto",
+    "cryptography",
+    "encryption"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "assert": "^1.1.2",
+    "bitcore-build-zelcash": "git://github.com/TheTrunk/bitcore-build-zelcash#master",
+    "brfs": "^1.2.0",
+    "chai": "^1.10.0",
+    "gulp": "^3.8.10",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "bitcore-lib-zelcash": "git://github.com/TheTrunk/bitcore-lib-zelcash#master",
+    "unorm": "^1.3.3"
+  }
+}
