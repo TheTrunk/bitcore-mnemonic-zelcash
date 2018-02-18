@@ -3,7 +3,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
 var spec = {
   name: 'Mnemonic',
-  message: 'Internal Error on bitcore-mnemonic-hush module {0}',
+  message: 'Internal Error on bitcore-mnemonic-zelcash module {0}',
   errors: [{
     name: 'InvalidEntropy',
     message: 'Entropy length must be an even multiple of 11 bits: {0}'
@@ -16,13 +16,13 @@ var spec = {
   }]
 };
 
-module.exports = require('bitcore-lib-hush').errors.extend(spec);
+module.exports = require('bitcore-lib-zelcash').errors.extend(spec);
 
-},{"bitcore-lib-hush":"bitcore-lib-hush"}],2:[function(require,module,exports){
+},{"bitcore-lib-zelcash":"bitcore-lib-zelcash"}],2:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var bitcore = require('bitcore-lib-hush');
+var bitcore = require('bitcore-lib-zelcash');
 var BN = bitcore.crypto.BN;
 var unorm = require('unorm');
 var _ = bitcore.deps._;
@@ -218,7 +218,7 @@ Mnemonic.fromSeed = function(seed, wordlist) {
 /**
  *
  * Generates a HD Private Key from a Mnemonic.
- * Optionally receive a passphrase and Hush network.
+ * Optionally receive a passphrase and Zelcash network.
  *
  * @param {String=} [passphrase]
  * @param {Network|String|number=} [network] - The network: 'livenet' or 'testnet'
@@ -317,7 +317,7 @@ Mnemonic._entropyChecksum = function(entropy) {
 module.exports = Mnemonic;
 
 }).call(this,require("buffer").Buffer)
-},{"./errors":1,"./pbkdf2":3,"./words":7,"bitcore-lib-hush":"bitcore-lib-hush","buffer":12,"unorm":230}],3:[function(require,module,exports){
+},{"./errors":1,"./pbkdf2":3,"./words":7,"bitcore-lib-zelcash":"bitcore-lib-zelcash","buffer":12,"unorm":230}],3:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -21281,7 +21281,7 @@ UChar.udata={
    }
 }(this));
 
-},{}],"bitcore-mnemonic-hush":[function(require,module,exports){
+},{}],"bitcore-mnemonic-zelcash":[function(require,module,exports){
 module.exports = require('./lib/mnemonic');
 
 },{"./lib/mnemonic":2}]},{},[]);
